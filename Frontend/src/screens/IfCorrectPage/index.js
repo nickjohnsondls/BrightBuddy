@@ -1,0 +1,1 @@
+export { IfCorrectPage } from "./IfCorrectPage";
