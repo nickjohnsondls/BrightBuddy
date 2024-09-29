@@ -76,5 +76,5 @@ This repository contains a **full-stack web application** designed to provide **
 
 
 ## **📜 Contributors:**
-Nick Johnson, MHacks17
+Nick Johnson, Juan Ceresa, Reiko Chen, Siu Ching Wong - MHacks17
 
