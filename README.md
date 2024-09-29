@@ -23,7 +23,7 @@ This repository contains a **full-stack web application** designed to provide **
 
 
 
-1. **Frontend Setup - React **
+1. **Frontend Setup - React**
    cd Frontend
    npm run dev
 
