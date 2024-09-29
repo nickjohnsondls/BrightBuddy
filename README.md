@@ -1,4 +1,5 @@
 # **🌟 Bright Buddy 🌟**
+https://devpost.com/software/bright-buddy-qyu1h6
 
 ## **Project Overview**
 This repository contains a **full-stack web application** designed to provide **real-time emotion tracking and AI interaction** through text input. The system integrates a backend powered by **Flask** and an **SQLite** database for managing button states, and a frontend built in **React** to interact with various backend components. The project also includes functionality for **AI text generation** based on specific areas of a given book.
@@ -8,20 +9,11 @@ This repository contains a **full-stack web application** designed to provide **
 - **AI Text Generation**: Generate dynamic responses using a large language model (OpenAI) based on predefined contexts.
 
 ## **🛠️ Tech Stack**
-
-### **Backend:**
-- **Flask**: For the backend server and RESTful API endpoints.
-- **SQLite**: Lightweight database for managing button states and configurations.
-- **Whisper / Latest GPT Model**: Integrated models for STT and AI text generation (planned).
-
-### **Frontend:**
+- **OpenAI**: For guiding the Dialogic reading!
 - **React**: For building interactive user interfaces.
 - **Axios**: For making HTTP requests to the Flask backend.
 
 ## **⚙️ Setup Instructions**
-
-
-
 
 1. **Frontend Setup - React**
    - cd Frontend
@@ -70,20 +62,6 @@ This repository contains a **full-stack web application** designed to provide **
         npm start
         ```
         The React app will start running at `http://localhost:3000`.
-
-5. **Testing the Button States:**
-   - Open the React frontend (`http://localhost:3000`).
-   - Toggle the `happy`, `sad`, and `ok` buttons.
-   - Observe the changes reflected in the Flask backend (`/get-button-state` endpoint).
-
-## **🌟 API Endpoints Overview**
-
-| **Endpoint**                         | **Method** | **Description**                                                        |
-|--------------------------------------|------------|------------------------------------------------------------------------|
-| `/get-button-state/<button>`         | `GET`      | Retrieve the current state of a specific button.                       |
-| `/update-button-state`               | `POST`     | Update the state of a button with a new value.                         |
-| `/transcribe`                        | `POST`     | (Planned) Transcribe live audio using STT.                             |
-| `/generate-response`                 | `POST`     | (Planned) Generate AI responses using LLaMA model.                     |
 
 ## **🚀 Future Development:**
 - **Integrate STT and TTS Models:**
