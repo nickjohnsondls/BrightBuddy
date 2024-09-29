@@ -5,8 +5,8 @@ This repository contains a **full-stack web application** designed to provide **
 
 ## **✨ Features**
  **Dynamic Button Configuration**: Store and update button states in an SQLite database for tracking different UI components.
-- **AI Text Generation**: Generate dynamic responses using a large language model (LLaMA) based on predefined contexts.
-- 
+- **AI Text Generation**: Generate dynamic responses using a large language model (OpenAI) based on predefined contexts.
+
 ## **🛠️ Tech Stack**
 
 ### **Backend:**
