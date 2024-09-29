@@ -320,7 +320,7 @@
 }
 
 .home-page .iconly-light-outline {
-  background-image: url(../../../static/img/libary-1-2.svg);
+  background-image: url(../../../static/img/libary-1.svg);
   background-size: 100% 100%;
   height: 38px;
   left: 160px;
@@ -434,25 +434,17 @@
   width: 297px;
 }
 
-.home-page .overlap-9 {
-  height: 54px;
-  left: 1365px;
-  position: absolute;
-  top: 903px;
-  width: 68px;
-}
-
 .home-page .text-wrapper-6 {
   color: #bcbcbc;
   font-family: "Poppins", Helvetica;
   font-size: 36px;
   font-weight: 700;
-  left: 0;
+  left: 1365px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 0;
+  top: 903px;
 }
 
 .home-page .reading-time-icon-wrapper {
@@ -475,7 +467,7 @@
   width: 50px;
 }
 
-.home-page .overlap-10 {
+.home-page .overlap-9 {
   height: 38px;
   left: 622px;
   position: absolute;
@@ -505,7 +497,7 @@
 }
 
 .home-page .image-wrapper {
-  background-image: url(../../../static/img/image-5.png);
+  background-image: url(../../../static/img/image-8.png);
   background-position: 50% 50%;
   background-size: cover;
   height: 33px;
@@ -524,7 +516,7 @@
   width: 32px;
 }
 
-.home-page .overlap-11 {
+.home-page .overlap-10 {
   background-image: url(../../../static/img/subtract-1.svg);
   background-size: 100% 100%;
   height: 29px;
@@ -553,4 +545,17 @@
   position: absolute;
   top: 0;
   width: 176px;
+}
+
+.home-page .text-wrapper-9 {
+  color: #bcbcbc;
+  font-family: "Poppins", Helvetica;
+  font-size: 36px;
+  font-weight: 700;
+  left: 1010px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 819px;
 }

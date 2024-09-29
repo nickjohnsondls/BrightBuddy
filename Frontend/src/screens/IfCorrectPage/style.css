@@ -41,7 +41,7 @@
   width: 176px;
 }
 
-.if-correct-page .text-wrapper-9 {
+.if-correct-page .text-wrapper-10 {
   color: #ffffff;
   font-family: "Poppins", Helvetica;
   font-size: 15px;
@@ -62,7 +62,7 @@
   width: 777px;
 }
 
-.if-correct-page .overlap-12 {
+.if-correct-page .overlap-11 {
   height: 554px;
   left: 868px;
   position: absolute;
@@ -93,88 +93,4 @@
   position: absolute;
   top: 528px;
   width: 78px;
-}
-
-.if-correct-page .navbar {
-  height: 91px;
-  left: 1188px;
-  position: absolute;
-  top: 34px;
-  width: 195px;
-}
-
-.if-correct-page .overlap-13 {
-  height: 86px;
-  left: 114px;
-  position: absolute;
-  top: 5px;
-  width: 81px;
-}
-
-.if-correct-page .ellipse-2 {
-  height: 35px;
-  left: 24px;
-  position: absolute;
-  top: 0;
-  width: 39px;
-}
-
-.if-correct-page .frame-7 {
-  align-items: flex-start;
-  display: flex;
-  gap: 10px;
-  height: 53px;
-  left: 0;
-  padding: 10px;
-  position: absolute;
-  top: 33px;
-  width: 81px;
-}
-
-.if-correct-page .text-wrapper-10 {
-  color: #818181;
-  font-family: "Poppins", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-right: -5.57px;
-  margin-top: -1px;
-  position: relative;
-  width: fit-content;
-}
-
-.if-correct-page .frame-8 {
-  align-items: flex-start;
-  display: flex;
-  gap: 10px;
-  height: 53px;
-  left: 0;
-  padding: 10px;
-  position: absolute;
-  top: 38px;
-  width: 89px;
-}
-
-.if-correct-page .text-wrapper-11 {
-  color: #818181;
-  font-family: "Poppins", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-right: -21.82px;
-  margin-top: -1px;
-  position: relative;
-  width: fit-content;
-}
-
-.if-correct-page .iconly-light-outline-2 {
-  background-image: url(../../../static/img/libary-4.svg);
-  background-size: 100% 100%;
-  height: 38px;
-  left: 34px;
-  position: absolute;
-  top: 0;
-  width: 43px;
 }

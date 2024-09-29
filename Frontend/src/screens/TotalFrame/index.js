@@ -1,1 +1,0 @@
-export { TotalFrame } from "./TotalFrame";

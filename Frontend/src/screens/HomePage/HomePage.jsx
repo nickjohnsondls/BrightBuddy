@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <div className="home-page">
       <div className="div">
@@ -83,7 +83,7 @@ export const HomePage = () => {
         <div className="overlap-7">
           <div className="group-4">
             <div className="overlap-group-2">
-              <img className="ellipse" alt="Ellipse" src="/img/ellipse-9-1-2.svg" />
+              <img className="ellipse" alt="Ellipse" src="/img/ellipse-9-1.svg" />
               <div className="frame-3">
                 <div className="text-wrapper-4">About Me</div>
               </div>
@@ -113,28 +113,28 @@ export const HomePage = () => {
           <p className="p">Included: A book for ALL children</p>
           <p className="p">Included: A book for ALL children</p>
         </div>
-        <div className="overlap-9">
-          <div className="text-wrapper-6">The</div>
-          <div className="text-wrapper-6">The</div>
-        </div>
+        <div className="text-wrapper-6">The</div>
         <div className="reading-time-icon-wrapper">
           <img className="reading-time-icon" alt="Reading time icon" src="/img/image-12.png" />
         </div>
-        <div className="overlap-10">
+        <div className="overlap-9">
           <div className="text-wrapper-7">10-15 min</div>
           <div className="text-wrapper-7">10-15 min</div>
         </div>
         <div className="logo">
           <div className="image-wrapper">
-            <img className="image" alt="Image" src="/img/image-5.png" />
+            <img className="image" alt="Image" src="/img/image-8.png" />
           </div>
-          <div className="overlap-11">
+          <div className="overlap-10">
             <div className="text-wrapper-8">NURTURING READS</div>
             <img className="subtract" alt="Subtract" src="/img/subtract-1.svg" />
             <div className="text-wrapper-8">Bright Buddy</div>
           </div>
         </div>
+        <div className="text-wrapper-9">Ten Tiny Toes</div>
       </div>
     </div>
   );
 };
+
+export default HomePage;
