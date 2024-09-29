@@ -20,13 +20,15 @@ This repository contains a **full-stack web application** designed to provide **
 
 ## **⚙️ Setup Instructions**
 
-1. **Clone the Repository:**
-    ```bash
-    git clone https://github.com/your-username/emotion-ai-interaction.git
-    cd emotion-ai-interaction
-    ```
 
-2. **Backend Setup (Flask + SQLite):**
+
+
+1. **Frontend Setup - React **
+   cd Frontend
+   npm run dev
+
+
+3. **Backend Setup (Flask + SQLite):**
 
     - **Navigate to the Backend Directory:**
         ```bash
@@ -51,7 +53,7 @@ This repository contains a **full-stack web application** designed to provide **
         ```
         The server will start running at `http://127.0.0.1:5000`.
 
-3. **Frontend Setup (React + Axios):**
+4. **Frontend Setup (React + Axios):**
 
     - **Navigate to the Frontend Directory:**
         ```bash
@@ -69,7 +71,7 @@ This repository contains a **full-stack web application** designed to provide **
         ```
         The React app will start running at `http://localhost:3000`.
 
-4. **Testing the Button States:**
+5. **Testing the Button States:**
    - Open the React frontend (`http://localhost:3000`).
    - Toggle the `happy`, `sad`, and `ok` buttons.
    - Observe the changes reflected in the Flask backend (`/get-button-state` endpoint).
