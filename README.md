@@ -24,8 +24,8 @@ This repository contains a **full-stack web application** designed to provide **
 
 
 1. **Frontend Setup - React**
-   cd Frontend
-   npm run dev
+   - cd Frontend
+   - npm run dev
 
 
 3. **Backend Setup (Flask + SQLite):**
