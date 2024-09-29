@@ -3,15 +3,46 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 const QuestionPage = () => {
+  // Optional: You can add a handler function if you want to handle button clicks
+  const handleOptionClick = (option) => {
+    console.log(`You selected: ${option}`);
+    // Add your logic here, e.g., check if the answer is correct
+  };
+
   return (
     <div className="question-page">
       <div className="container">
+        {/* Options moved to the front as buttons */}
+        <div className="options-container">
+          <button
+            className="option-button"
+            onClick={() => handleOptionClick("A gate")}
+          >
+            A gate
+          </button>
+          <button
+            className="option-button"
+            onClick={() => handleOptionClick("A flag")}
+          >
+            A flag
+          </button>
+          <button
+            className="option-button"
+            onClick={() => handleOptionClick("A bucket")}
+          >
+            A bucket
+          </button>
+        </div>
+
+        {/* Header Frame */}
         <div className="frame">
           <img className="image" alt="Image" src="/img/image-8.png" />
           <div className="overlap-group">
             <div className="text-wrapper">Bright Buddy</div>
           </div>
         </div>
+
+        {/* Main Content */}
         <div className="overlap">
           <div className="overlap-2">
             <div className="question-section">
@@ -21,27 +52,32 @@ const QuestionPage = () => {
                 src="/img/question-time-can-you-remember-what-max-and-lily-used-to-build.png"
               />
             </div>
-            <img className="tts-icon" alt="Tts icon generation" src="/img/tts-icon-generation.png" />
+            <img
+              className="tts-icon"
+              alt="Tts icon generation"
+              src="/img/tts-icon-generation.png"
+            />
           </div>
-          <img className="rectangle" alt="Rectangle" src="/img/rectangle-31.png" />
-          <div className="option">
-            <div className="text-wrapper-2">A gate</div>
-          </div>
-          <div className="option">
-            <div className="text-wrapper-3">A flag</div>
-          </div>
-          <div className="option">
-            <div className="text-wrapper-4">A bucket</div>
-          </div>
+          <img
+            className="rectangle"
+            alt="Rectangle"
+            src="/img/rectangle-31.png"
+          />
 
-          {/* Add a Link around the Next Page image */}
+          {/* Navigation Links */}
           <Link to="/reading-page">
-            <img className="next-page-reading" alt="Next page reading" src="/img/next-page-incorrect.png" />
+            <img
+              className="next-page-reading"
+              alt="Next page reading"
+              src="/img/next-page-incorrect.png"
+            />
           </Link>
-
-          {/* If you need additional links, add them as needed */}
-          <Link className="prev-page-question" to="/">
-            <img className="prev-page-question" alt="Prev page question" src="/img/prev-page-question-page.png" />
+          <Link to="/">
+            <img
+              className="prev-page-question"
+              alt="Prev page question"
+              src="/img/prev-page-question-page.png"
+            />
           </Link>
         </div>
       </div>

@@ -7,15 +7,42 @@ const ReadingPage = () => {
   return (
     <div className="reading-page">
       <div className="div-3">
-        <Link className="logo-3" to="/homepage">
-          <img className="image-3" alt="Image" src="/img/image-8.png" />
-          <img className="subtract-2" alt="Subtract" src="/img/subtract.svg" />
-          <div className="text-wrapper-11">Bright Buddy</div>
+        {/* Logo and Brand Name */}
+        <Link to="/homepage">
+          <img className="logo-3" alt="Logo" src="/img/image-8.png" />
         </Link>
-        <img className="incorrect-slide" alt="Incorrect slide" src="/img/incorrect-slide-bunny-image.png" />
-        <img className="not-quite-can" alt="Not quite can" src="/img/not-quite-can-brightbuddy-help-you.png" />
-        <img className="img-2" alt="Next page incorrect" src="/img/next-page-incorrect.png" />
-        <img className="img-3" alt="Previous page" src="/img/previous-page-incorrect.png" />
+        <img className="subtract-2" alt="Subtract" src="/img/subtract.svg" />
+        <div className="text-wrapper-11">Bright Buddy</div>
+
+        {/* Main Content */}
+        <img
+          className="incorrect-slide"
+          alt="Incorrect slide"
+          src="/img/incorrect-slide-bunny-image.png"
+        />
+        <img
+          className="not-quite-can"
+          alt="Not quite can"
+          src="/img/not-quite-can-brightbuddy-help-you.png"
+        />
+
+        {/* First Next Page Button */}
+        <Link to="/question-page">
+          <img
+            className="next-page-reading"
+            alt="Next page reading"
+            src="/img/next-page-incorrect.png"
+          />
+        </Link>
+
+        {/* Previous Page Button */}
+        <img
+          className="previous-page"
+          alt="Previous page"
+          src="/img/previous-page-incorrect.png"
+        />
+
+        {/* Navbar */}
         <div className="navbar">
           <img className="ellipse-2" alt="Ellipse" src="/img/ellipse-9.svg" />
           <div className="frame-7" />
@@ -29,7 +56,13 @@ const ReadingPage = () => {
             <Libary className="status-active" color="#BCBCBC" />
           </div>
         </div>
-        <img className="STT-incorrect-page" alt="Stt incorrect page" src="/img/stt-incorrect-page.png" />
+
+        {/* Other Components */}
+        <img
+          className="STT-incorrect-page"
+          alt="STT incorrect page"
+          src="/img/stt-incorrect-page.png"
+        />
         <div className="text-box-print">
           <div className="rectangle-3" />
           <div className="rectangle-4" />
@@ -40,7 +73,13 @@ const ReadingPage = () => {
           <img className="subtract-2" alt="Subtract" src="/img/subtract.svg" />
           <div className="text-wrapper-14">Bright Buddy</div>
         </div>
-        <img className="bunny-background-og" alt="Bunny background og" src="/img/bunny-background-og.png" />
+        <img
+          className="bunny-background-og"
+          alt="Bunny background original"
+          src="/img/bunny-background-og.png"
+        />
+
+        {/* Question Section */}
         <div className="question-question">
           <div className="rectangle-6" />
           <img
@@ -49,7 +88,6 @@ const ReadingPage = () => {
             src="/img/question-time-can-you-remember-what-max-and-lily-used-to-build.png"
           />
         </div>
-        <img className="img-2" alt="Rectangle" src="/img/next-page-incorrect.png" />
         <div className="frame-11">
           <img className="ellipse-3" alt="Ellipse" src="/img/ellipse-23.svg" />
           <div className="text-wrapper-15">A gate</div>
@@ -62,20 +100,54 @@ const ReadingPage = () => {
           <img className="ellipse-4" alt="Ellipse" src="/img/ellipse-22.svg" />
           <div className="text-wrapper-17">A bucket</div>
         </div>
-        <img className="img-3" alt="Prev page question" src="/img/previous-page-incorrect.png" />
-        <img className="TTS-icon-generation" alt="Tts icon generation" src="/img/tts-icon-generation.png" />
-        <img className="bunny-background" alt="Bunny background" src="/img/bunny-background-reading-page.png" />
+        <img
+          className="img-3"
+          alt="Previous page question"
+          src="/img/previous-page-incorrect.png"
+        />
+        <img
+          className="TTS-icon-generation"
+          alt="TTS icon generation"
+          src="/img/tts-icon-generation.png"
+        />
+        <img
+          className="bunny-background"
+          alt="Bunny background"
+          src="/img/bunny-background-reading-page.png"
+        />
+
+        {/* Logo and Title */}
         <img className="logo-icon" alt="Logo icon" src="/img/image-8.png" />
         <img className="subtract-3" alt="Subtract" src="/img/subtract.svg" />
         <div className="text-wrapper-18">Bright Buddy</div>
+
+        {/* Reading Text */}
         <div className="rectangle-7" />
         <p className="text-wrapper-19">
-          “Together, they built more towers, laughing and chatting. Mother Rabbit helped them make walls and a gate.
-          They even added a stick flag on top for the final touch.”
+          “Together, they built more towers, laughing and chatting. Mother Rabbit
+          helped them make walls and a gate. They even added a stick flag on top
+          for the final touch.”
         </p>
-        <img className="previous-page" alt="Previous page" src="/img/previous-page-incorrect.png" />
-        <img className="next-page-reading" alt="Next page reading" src="/img/next-page-incorrect.png" />
-        <img className="STT-reading-page" alt="Stt reading page" src="/img/stt-incorrect-page.png" />
+        <img
+          className="previous-page"
+          alt="Previous page"
+          src="/img/previous-page-incorrect.png"
+        />
+
+        {/* Second Next Page Button */}
+        <Link to="/question-page">
+          <img
+            className="next-page-reading"
+            alt="Next page reading"
+            src="/img/next-page-incorrect.png"
+          />
+        </Link>
+
+        <img
+          className="STT-reading-page"
+          alt="STT reading page"
+          src="/img/stt-incorrect-page.png"
+        />
       </div>
     </div>
   );

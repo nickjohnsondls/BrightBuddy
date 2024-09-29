@@ -363,13 +363,7 @@
   width: 45px;
 }
 
-.reading-page .bunny-background {
-  height: 873px;
-  left: 0;
-  position: absolute;
-  top: 151px;
-  width: 1440px;
-}
+
 
 .reading-page .logo-icon {
   height: 33px;
@@ -432,13 +426,6 @@
   width: 81px;
 }
 
-.reading-page .next-page-reading {
-  height: 99px;
-  left: 1361px;
-  position: absolute;
-  top: 530px;
-  width: 79px;
-}
 
 .reading-page .STT-reading-page {
   height: 51px;
@@ -447,4 +434,32 @@
   position: absolute;
   top: 652px;
   width: 53px;
+}
+
+
+/* Adjusted .bunny-background to have a lower z-index */
+.reading-page .bunny-background {
+  position: absolute;
+  top: 151px;
+  left: 0;
+  width: 1440px;
+  height: 873px;
+  z-index: 0;
+}
+
+/* Combined and corrected .next-page-reading styles */
+.reading-page .next-page-reading {
+  position: absolute;
+  top: 530px;
+  left: 1361px;
+  width: 79px;
+  height: 99px;
+  z-index: 10; /* Higher than .bunny-background */
+  cursor: pointer; /* Changes cursor on hover */
+}
+
+/* Ensure other elements do not overlap */
+.reading-page .STT-reading-page,
+.reading-page .previous-page {
+  z-index: 5;
 }

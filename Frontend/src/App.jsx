@@ -10,10 +10,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/reading-page" element={<ReadingPage/>} />
-        <Route path="/question-page" element={<QuestionPage/>} />
-        <Route path="/if-correct" element={<IfCorrectPage/>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/reading-page" element={<ReadingPage />} />
+        <Route path="/question-page" element={<QuestionPage />} />
+        <Route path="/if-correct-page" element={<IfCorrectPage />} />
       </Routes>
     </Router>
   );
