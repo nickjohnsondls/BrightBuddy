@@ -1,13 +1,10 @@
 # **🌟 Bright Buddy 🌟**
 
 ## **Project Overview**
-This repository contains a **full-stack web application** designed to provide **real-time emotion tracking and AI interaction** through speech and text. The system integrates a backend powered by **Flask** and an **SQLite** database for managing button states, and a frontend built in **React** to interact with various backend components. The project also includes functionality for **Speech-to-Text (STT)**, **Text-to-Speech (TTS)**, and **AI text generation** based on specific areas of a given book.
+This repository contains a **full-stack web application** designed to provide **real-time emotion tracking and AI interaction** through text input. The system integrates a backend powered by **Flask** and an **SQLite** database for managing button states, and a frontend built in **React** to interact with various backend components. The project also includes functionality for **AI text generation** based on specific areas of a given book.
 
 ## **✨ Features**
-- **Emotion Button States**: React frontend allows toggling and tracking of buttons like **happy**, **sad**, and **ok**.
-- **Real-Time Speech-to-Text (STT)**: Capture live audio input and transcribe it in real-time using a local or cloud-based STT model.
-- **Text-to-Speech (TTS)**: Convert text-based responses back into lifelike speech using TTS models.
-- **Dynamic Button Configuration**: Store and update button states in an SQLite database for tracking different UI components.
+ **Dynamic Button Configuration**: Store and update button states in an SQLite database for tracking different UI components.
 - **AI Text Generation**: Generate dynamic responses using a large language model (LLaMA) based on predefined contexts.
 - 
 ## **🛠️ Tech Stack**
@@ -15,15 +12,11 @@ This repository contains a **full-stack web application** designed to provide **
 ### **Backend:**
 - **Flask**: For the backend server and RESTful API endpoints.
 - **SQLite**: Lightweight database for managing button states and configurations.
-- **Whisper / LLaMA Model**: Integrated models for STT and AI text generation (planned).
+- **Whisper / Latest GPT Model**: Integrated models for STT and AI text generation (planned).
 
 ### **Frontend:**
 - **React**: For building interactive user interfaces.
 - **Axios**: For making HTTP requests to the Flask backend.
-
-### **AI Models:**
-- **Speech-to-Text (STT)**: Whisper or similar models for real-time transcription.
-- **Text-to-Speech (TTS)**: LLaMA or Cartesia’s TTS models for speech synthesis.
 
 ## **⚙️ Setup Instructions**
 
@@ -96,7 +89,7 @@ This repository contains a **full-stack web application** designed to provide **
   - Implement TTS to convert AI-generated text into speech.
 
 - **Contextual AI Text Generation:**
-  - Use LLaMA or another LLM model to generate text-based on specific book segments.
+  - Use openAI LLM model to generate text-based on specific book segments.
 
 - **Improved Frontend Design:**
   - Add visual indicators and enhancements for different button states.
