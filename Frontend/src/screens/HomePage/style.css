@@ -559,3 +559,17 @@
   text-align: center;
   top: 819px;
 }
+
+
+.home-page .included-book,
+.home-page .love-you-to-moon,
+.home-page .ten-tiny-toes {
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Scale up on hover */
+.home-page .included-book:hover,
+.home-page .love-you-to-moon:hover,
+.home-page .ten-tiny-toes:hover {
+  transform: scale(1.1); /* Scale up to 110% */
+}

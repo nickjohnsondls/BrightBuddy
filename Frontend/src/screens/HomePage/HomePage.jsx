@@ -111,7 +111,6 @@ const HomePage = () => {
         </div>
         <div className="overlap-8">
           <p className="p">Included: A book for ALL children</p>
-          <p className="p">Included: A book for ALL children</p>
         </div>
         <div className="reading-time-icon-wrapper">
           <img className="reading-time-icon" alt="Reading time icon" src="/img/image-12.png" />
