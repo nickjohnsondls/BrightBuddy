@@ -58,20 +58,15 @@ const QuestionPage = () => {
               src="/img/tts-icon-generation.png"
             />
           </div>
+          <Link to ="/if-incorrect-page">
           <img
             className="rectangle"
             alt="Rectangle"
             src="/img/rectangle-31.png"
           />
+          </Link>
 
           {/* Navigation Links */}
-          <Link to="/reading-page">
-            <img
-              className="next-page-reading"
-              alt="Next page reading"
-              src="/img/next-page-incorrect.png"
-            />
-          </Link>
           <Link to="/">
             <img
               className="prev-page-question"
