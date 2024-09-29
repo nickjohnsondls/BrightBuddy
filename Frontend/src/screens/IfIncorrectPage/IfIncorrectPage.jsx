@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios"; // Import axios for making API calls
 import "./style.css";
 
 const IfIncorrectPage = () => {
+  const [userInput, setUserInput] = useState(""); // State to hold user input
+  const [response, setResponse] = useState(""); // State to hold the AI response
+
+  // Function to handle the API call
+  const handleGenerate = async () => {
+    try {
+      const result = await axios.post("http://localhost:5001/api/generate", {
+        userInput,
+      });
+      setResponse(result.data.response);
+    } catch (error) {
+      console.error("Error communicating with the backend:", error);
+    }
+  };
+
   return (
     <div className="if-incorrect-page">
       <div className="div-2">
@@ -23,17 +39,29 @@ const IfIncorrectPage = () => {
             alt="Not quite can"
             src="/img/not-quite-can-brightbuddy-help-you.png"
           />
-          <img
-            className="thumbs-down"B
-            alt="Thumbs down"
-            src="/img/thumbs-down.png"
-          />
         </div>
-        <img
-          className="next-page-incorrect"
-          alt="Next page incorrect"
-          src="/img/next-page-incorrect.png"
-        />
+
+        {/* Input box for user to type prompt */}
+        <div className="prompt-container">
+          <input
+            type="text"
+            className="prompt-input"
+            placeholder="Ask BrightBuddy Here..."
+            value={userInput}
+            onChange={(e) => setUserInput(e.target.value)}
+          />
+          <button className="generate-button" onClick={handleGenerate}>
+            Ask
+          </button>
+        </div>
+
+        {/* Display the AI response */}
+        {response && (
+          <div className="response-container">
+            <p className="response-text">{response}</p>
+          </div>
+        )}
+
       </div>
     </div>
   );
