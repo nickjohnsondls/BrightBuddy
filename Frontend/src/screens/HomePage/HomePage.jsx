@@ -111,9 +111,7 @@ const HomePage = () => {
         </div>
         <div className="overlap-8">
           <p className="p">Included: A book for ALL children</p>
-          <p className="p">Included: A book for ALL children</p>
         </div>
-        <div className="text-wrapper-6">The</div>
         <div className="reading-time-icon-wrapper">
           <img className="reading-time-icon" alt="Reading time icon" src="/img/image-12.png" />
         </div>
@@ -126,7 +124,7 @@ const HomePage = () => {
             <img className="image" alt="Image" src="/img/image-8.png" />
           </div>
           <div className="overlap-10">
-            <div className="text-wrapper-8">NURTURING READS</div>
+            <div className="text-wrapper-8"></div>
             <img className="subtract" alt="Subtract" src="/img/subtract-1.svg" />
             <div className="text-wrapper-8">Bright Buddy</div>
           </div>

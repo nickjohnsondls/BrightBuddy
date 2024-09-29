@@ -7,12 +7,6 @@ const ReadingPage = () => {
   return (
     <div className="reading-page">
       <div className="div-3">
-        {/* Logo and Brand Name */}
-        <Link to="/homepage">
-          <img className="logo-3" alt="Logo" src="/img/image-8.png" />
-        </Link>
-        <img className="subtract-2" alt="Subtract" src="/img/subtract.svg" />
-        <div className="text-wrapper-11">Bright Buddy</div>
 
         {/* Main Content */}
         <img
@@ -43,7 +37,7 @@ const ReadingPage = () => {
         />
 
         {/* Navbar */}
-        <div className="navbar">
+        {/* <div className="navbar">
           <img className="ellipse-2" alt="Ellipse" src="/img/ellipse-9.svg" />
           <div className="frame-7" />
           <div className="frame-8">
@@ -55,7 +49,7 @@ const ReadingPage = () => {
           <div className="libary-wrapper">
             <Libary className="status-active" color="#BCBCBC" />
           </div>
-        </div>
+        </div> */}
 
         {/* Other Components */}
         <img
@@ -69,9 +63,10 @@ const ReadingPage = () => {
           <div className="rectangle-5" />
         </div>
         <div className="frame-10">
-          <img className="image-3" alt="Image" src="/img/image-8.png" />
+        <Link to="/"><img className="image-3" alt="Image" src="/img/image-8.png" />
           <img className="subtract-2" alt="Subtract" src="/img/subtract.svg" />
           <div className="text-wrapper-14">Bright Buddy</div>
+        </Link>
         </div>
         <img
           className="bunny-background-og"
@@ -115,11 +110,6 @@ const ReadingPage = () => {
           alt="Bunny background"
           src="/img/bunny-background-reading-page.png"
         />
-
-        {/* Logo and Title */}
-        <img className="logo-icon" alt="Logo icon" src="/img/image-8.png" />
-        <img className="subtract-3" alt="Subtract" src="/img/subtract.svg" />
-        <div className="text-wrapper-18">Bright Buddy</div>
 
         {/* Reading Text */}
         <div className="rectangle-7" />

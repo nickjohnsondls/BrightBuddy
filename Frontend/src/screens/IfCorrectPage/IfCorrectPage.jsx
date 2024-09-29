@@ -6,7 +6,7 @@ const IfCorrectPage = () => {
   return (
     <div className="if-correct-page">
       <div className="div-2">
-        <Link className="logo-2" to="/homepage">
+        <Link className="logo-2" to="/">
           <img className="image-2" alt="Image" src="/img/image-8.png" />
           <div className="overlap-group-3">
             <div className="text-wrapper-10">Bright Buddy</div>

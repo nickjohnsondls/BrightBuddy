@@ -3,43 +3,24 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 const QuestionPage = () => {
-  // Optional: You can add a handler function if you want to handle button clicks
+  //const navigate = useNavigate();
+
   const handleOptionClick = (option) => {
     console.log(`You selected: ${option}`);
-    // Add your logic here, e.g., check if the answer is correct
   };
 
   return (
     <div className="question-page">
       <div className="container">
-        {/* Options moved to the front as buttons */}
-        <div className="options-container">
-          <button
-            className="option-button"
-            onClick={() => handleOptionClick("A gate")}
-          >
-            A gate
-          </button>
-          <button
-            className="option-button"
-            onClick={() => handleOptionClick("A flag")}
-          >
-            A flag
-          </button>
-          <button
-            className="option-button"
-            onClick={() => handleOptionClick("A bucket")}
-          >
-            A bucket
-          </button>
-        </div>
 
         {/* Header Frame */}
         <div className="frame">
-          <img className="image" alt="Image" src="/img/image-8.png" />
-          <div className="overlap-group">
-            <div className="text-wrapper">Bright Buddy</div>
-          </div>
+          <Link to="/">
+            <img className="image" alt="Image" src="/img/image-8.png" />
+            <div className="overlap-group">
+              <div className="text-wrapper">Bright Buddy</div>
+            </div>
+          </Link>
         </div>
 
         {/* Main Content */}
@@ -58,16 +39,42 @@ const QuestionPage = () => {
               src="/img/tts-icon-generation.png"
             />
           </div>
-          <Link to ="/if-incorrect-page">
-          <img
-            className="rectangle"
-            alt="Rectangle"
-            src="/img/rectangle-31.png"
-          />
-          </Link>
+
+          {/* Options moved below tts-icon */}
+          <div className="options-container">
+          <Link to="/if-incorrect-page"> <button
+              className="option-button"
+              onClick={() => handleOptionClick("A gate")}
+            >
+              A gate
+            </button>
+            </Link>
+            <Link to="/if-incorrect-page">
+            <button
+              className="option-button"
+              onClick={() => handleOptionClick("A flag")}
+            >
+              A flag
+            </button>
+            </Link>
+            <Link to="/if-correct-page">
+            <button
+              className="option-button"
+              onClick={() => handleOptionClick("A bucket")}
+            >
+              A bucket
+            </button>
+            </Link>
+          </div>
+
+            <img
+              className="rectangle"
+              alt="Rectangle"
+              src="/img/rectangle-31.png"
+            />
 
           {/* Navigation Links */}
-          <Link to="/">
+          <Link to="/reading-page">
             <img
               className="prev-page-question"
               alt="Prev page question"
@@ -79,5 +86,6 @@ const QuestionPage = () => {
     </div>
   );
 };
+
 
 export default QuestionPage;
