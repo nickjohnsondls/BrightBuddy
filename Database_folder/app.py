@@ -42,6 +42,12 @@ def update_button():
     updated_state = update_button_state(button_name, new_state)
     return jsonify({"button_name": button_name, "new_state": updated_state})
 
+
+# !possibly take this out
+@app.route('/')
+def home():
+    return "Welcome to the Nurturing Reads Backend!"
+
 # Run the Flask app
 if __name__ == '__main__':
     app.run(debug=True)
